@@ -10,7 +10,7 @@
         /* Alteração de cores, estilo de botões e mais animações! */
         body {
             font-family: Arial, sans-serif;
-            background-color: #E0DBD2;
+            background-color: #FFFFFF;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -20,11 +20,13 @@
 
 
         .container {
-            background-color: #fff;
+            background-color: #5C9EAD;
             padding: 20px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 10px rgba(50, 98, 115);
             border-radius: 8px;
             text-align: center;
+            height: 180px;
+            padding: 10px;
         }
 
         .question {
@@ -34,36 +36,29 @@
         .question h2 {
             margin-top: 0;
         }
-
-        button {
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            margin: 5px;
-            cursor: pointer;
-            border-radius: 4px;
-        }
-
-        button:hover {
-            background-color: #45a049;
-        }
     </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <input type="checkbox" id="checkbox">
+    <label for="checkbox" class="toggle">
+        <div class="bars" id="bar1"></div>
+        <div class="bars" id="bar2"></div>
+        <div class="bars" id="bar3"></div>
+    </label>
     <div class="container">
         <div class="question" id="question1" style="display: block;">
             <h2>Pergunta 1</h2>
-            <p>Como você tem se sentido ultimamente?</p>
-            <button onclick="answerQuestion(1, 10)">Bem</button>
-            <button onclick="answerQuestion(1, 5)">Relativamente Bem</button>
-            <button onclick="answerQuestion(1, -5)">Relativamente Mal</button>
-            <button onclick="answerQuestion(1, -10)">Mal</button>
+            <p>Como você tem se sentido ultimamente?</p> <br> <br>
+            <button class="btn" onclick="answerQuestion(1, 10)">Bem</button>
+            <button class="btn" onclick="answerQuestion(1, 5)">Relativamente Bem</button>
+            <button class="btn" onclick="answerQuestion(1, -5)">Relativamente Mal</button>
+            <button class="btn" onclick="answerQuestion(1, -10)">Mal</button>
         </div>
 
         <div class="question" id="question2">
             <h2>Pergunta 2</h2>
-            <p>Existe algo que esteja te incomodando ou te preocupando muito?</p>
+            <p>Existe algo que esteja te incomodando ou te preocupando muito?</p><br><br>
             <button onclick="answerQuestion(2, 10)">Sim</button>
             <button onclick="answerQuestion(2, 5)">Relativamente Sim</button>
             <button onclick="answerQuestion(2, -5)">Relativamente Não</button>
@@ -72,7 +67,7 @@
 
         <div class="question" id="question3">
             <h2>Pergunta 3</h2>
-            <p>Você tem encontrado dificuldades para dormir ou descansar bem?</p>
+            <p>Você tem encontrado dificuldades para dormir ou descansar bem?</p><br><br>
             <button onclick="answerQuestion(3, 10)">Sim</button>
             <button onclick="answerQuestion(3, 5)">Relativamente Sim</button>
             <button onclick="answerQuestion(3, -5)">Relativamente Não</button>
@@ -81,7 +76,7 @@
 
         <div class="question" id="question4">
             <h2>Pergunta 4</h2>
-            <p>Como você está lidando com o estresse do dia a dia?</p>
+            <p>Como você está lidando com o estresse do dia a dia?</p><br><br>
             <button onclick="answerQuestion(4, 10)">Bem</button>
             <button onclick="answerQuestion(4, 5)">Relativamente Bem</button>
             <button onclick="answerQuestion(4, -5)">Relativamente Mal</button>
@@ -90,7 +85,7 @@
 
         <div class="question" id="question5">
             <h2>Pergunta 5</h2>
-            <p>Você tem notado mudanças no seu apetite ultimamente?</p>
+            <p>Você tem notado mudanças no seu apetite ultimamente?</p><br><br>
             <button onclick="answerQuestion(5, 10)">Sim</button>
             <button onclick="answerQuestion(5, 5)">Relativamente Sim</button>
             <button onclick="answerQuestion(5, -5)">Relativamente Não</button>
@@ -99,7 +94,7 @@
 
         <div class="question" id="question6">
             <h2>Pergunta 6</h2>
-            <p>Existe alguma atividade que costumava te trazer prazer?</p>
+            <p>Existe alguma atividade que costumava te trazer prazer?</p><br><br>
             <button onclick="answerQuestion(6, 10)">Sim</button>
             <button onclick="answerQuestion(6, 5)">Relativamente Sim</button>
             <button onclick="answerQuestion(6, -5)">Relativamente Não</button>
@@ -108,7 +103,7 @@
 
         <div class="question" id="question7">
             <h2>Pergunta 7</h2>
-            <p>Você se sente apoiado/a pelas pessoas ao seu redor?</p>
+            <p>Você se sente apoiado/a pelas pessoas ao seu redor?</p><br><br>
             <button onclick="answerQuestion(7, 10)">Sim</button>
             <button onclick="answerQuestion(7, 5)">Relativamente Sim</button>
             <button onclick="answerQuestion(7, -5)">Relativamente Não</button>
@@ -117,7 +112,7 @@
 
         <div class="question" id="question8">
             <h2>Pergunta 8</h2>
-            <p>Você já considerou buscar ajuda profissional para lidar com o que você tem?</p>
+            <p>Você já considerou buscar ajuda profissional para lidar com o que você tem?</p><br><br>
             <button onclick="answerQuestion(8, 10)">Sim</button>
             <button onclick="answerQuestion(8, 5)">Relativamente Sim</button>
             <button onclick="answerQuestion(8, -5)">Relativamente Não</button>
@@ -126,7 +121,7 @@
 
         <div class="question" id="question9">
             <h2>Pergunta 9</h2>
-            <p>Você consegue se concentrar nas suas atividades diárias sem dificuldade?</p>
+            <p>Você consegue se concentrar nas suas atividades diárias sem dificuldade?</p><br><br>
             <button onclick="answerQuestion(9, 10)">Sim</button>
             <button onclick="answerQuestion(9, 5)">Relativamente Sim</button>
             <button onclick="answerQuestion(9, -5)">Relativamente Não</button>
@@ -135,7 +130,7 @@
 
         <div class="question" id="question10">
             <h2>Pergunta 10</h2>
-            <p>Você tem tido pensamentos negativos que têm persistido?</p>
+            <p>Você tem tido pensamentos negativos que têm persistido?</p><br><br>
             <button onclick="answerQuestion(10, 10)">Sim</button>
             <button onclick="answerQuestion(10, 5)">Relativamente Sim</button>
             <button onclick="answerQuestion(10, -5)">Relativamente Não</button>
