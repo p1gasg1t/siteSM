@@ -4,48 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Questionário</title>
-    <style>
-        /* Fazer um menu estilo cascate! */
-
-        /* Alteração de cores, estilo de botões e mais animações! */
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #FFFFFF;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-
-
-        .container {
-            background-color: #5C9EAD;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(50, 98, 115);
-            border-radius: 8px;
-            text-align: center;
-            height: 180px;
-            padding: 10px;
-        }
-
-        .question {
-            display: none;
-        }
-
-        .question h2 {
-            margin-top: 0;
-        }
-    </style>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <input type="checkbox" id="checkbox">
-    <label for="checkbox" class="toggle">
-        <div class="bars" id="bar1"></div>
-        <div class="bars" id="bar2"></div>
-        <div class="bars" id="bar3"></div>
-    </label>
+    
+    <label class="hamburger">
+        <input type="checkbox">
+        <svg viewBox="0 0 32 32">
+          <path class="line line-top-bottom" d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"></path>
+          <path class="line" d="M7 16 27 16"></path>
+        </svg>
+      </label>
+
     <div class="container">
         <div class="question" id="question1" style="display: block;">
             <h2>Pergunta 1</h2>
