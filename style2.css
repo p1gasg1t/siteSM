@@ -1,0 +1,73 @@
+  /* Botão */
+.botao {
+    height: 50px;
+    width: 100px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: transparent;
+    cursor: pointer;
+    border: 2px solid #252525;
+    overflow: hidden;
+    border-radius: 30px;
+    color: #333;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .btn-txt {
+    z-index: 1;
+    font-weight: 800;
+    letter-spacing: 4px;
+  }
+  
+  .type1::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 0.5s ease-in-out;
+    background-color: #333;
+    border-radius: 30px;
+    visibility: hidden;
+    height: 10px;
+    width: 10px;
+    z-index: -1;
+  }
+  
+  .botao:hover {
+    box-shadow: 1px 1px 200px #252525;
+    color: #fff;
+    border: none;
+  }
+  
+  .type1:hover::after {
+    visibility: visible;
+    transform: scale(100) translateX(2px);
+  }
+    /* Botão fim */
+
+.topEscrita {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 0 auto;
+    width: 50%;
+    font-weight: 800;
+    letter-spacing: 2px;
+    font-family: sans-serif;
+}
+
+.body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#escrita {
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+}
