@@ -124,6 +124,7 @@ button:active {
     box-shadow: 1px 1px 200px #252525;
     color: #fff;
     border: none;
+    translate: translateX(7);
   }
 #openbtn:hover::after {
     visibility: visible;

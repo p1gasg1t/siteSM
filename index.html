@@ -148,17 +148,15 @@
         }
 
         function displayResult() {
-            let grade;
             if (score >= 75) {
-                grade = "A";
+                window.location.href = 'A.html';
             } else if (score >= 50) {
-                grade = "B";
+                window.location.href = 'B.html';
             } else if (score >= 25) {
-                grade = "C";
-            } else if (score >= 0) {
-                grade = "D";
+                window.location.href = 'C.html';
+            } else {
+                window.location.href = 'D.html';
             }
-            alert(`Sua pontuação final é: ${score}\n\nResultado: "${grade}"`);
         }
         // Final do script para definir valores
     </script>
