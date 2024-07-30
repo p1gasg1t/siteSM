@@ -1,13 +1,13 @@
   /* Botão */
 .botao {
-    height: 50px;
-    width: 100px;
+    height: 40px;
+    width: 90px;
     position: absolute;
     top: 10px;
     left: 10px;
     background-color: transparent;
     cursor: pointer;
-    border: 2px solid #252525;
+    border: 2px solid #5C9EAD;
     overflow: hidden;
     border-radius: 30px;
     color: #333;
@@ -26,7 +26,7 @@
     left: 0;
     top: 0;
     transition: all 0.5s ease-in-out;
-    background-color: #333;
+    background-color: #5C9EAD;
     border-radius: 30px;
     visibility: hidden;
     height: 10px;

@@ -16,8 +16,11 @@ body {
     box-shadow: 0 0 10px rgba(50, 98, 115);
     border-radius: 8px;
     text-align: center;
-    height: 180px;
+    width: 95vh;
+    height: 25vh;
     padding: 10px;
+    overflow: hidden;
+    font-weight: 700;
 }
 
 .question {
@@ -100,11 +103,10 @@ button:active {
         top: 20px;
         left: 10px;
         cursor: pointer;
-        border: 2px solid #252525;
+        border: 2px solid #5C9EAD;
         overflow: hidden;
         border-radius: 30px;
         color: #333;
-        transition: all 0.5s ease-in-out; 
 }
 #openbtn::after {
         content: "";
@@ -112,7 +114,7 @@ button:active {
         left: 0;
         top: 0;
         transition: all 0.5s ease-in-out;
-        background-color: #333;
+        background-color: #5C9EAD;
         border-radius: 30px;
         visibility: hidden;
         height: 10px;
@@ -137,3 +139,4 @@ button:active {
 }
 
 /* Final da barra lateral central */
+
