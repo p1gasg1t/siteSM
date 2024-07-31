@@ -7,11 +7,14 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
+    background: url(pics/sea-with-cloudy-weather.jpg) no-repeat;
+    background-size: cover;
 }
 
 
 .container {
-    background-color: #5C9EAD;
+    background-color: transparent;
+    backdrop-filter: blur(15px);
     padding: 20px;
     box-shadow: 0 0 10px rgba(50, 98, 115);
     border-radius: 8px;
