@@ -37,7 +37,6 @@
         <div class="question" id="question2">
             <br><h2>Pergunta 2</h2>
             <p>Existe algo que esteja te incomodando ou te preocupando muito?</p><br>
-            <!-- Não = Positivo, Sim = Negativo -->
             <button onclick="answerQuestion(2, 10)">Sim</button>
             <button onclick="answerQuestion(2, 5)">Relativamente Sim</button>
             <button onclick="answerQuestion(2, -5)">Relativamente Não</button>
@@ -47,7 +46,6 @@
         <div class="question" id="question3">
             <br><h2>Pergunta 3</h2>
             <p>Você tem encontrado dificuldades para dormir ou descansar bem?</p><br>
-            <!-- Não = Positivo, Sim = Negativo -->
             <button onclick="answerQuestion(3, 10)">Sim</button>
             <button onclick="answerQuestion(3, 5)">Relativamente Sim</button>
             <button onclick="answerQuestion(3, -5)">Relativamente Não</button>
@@ -66,7 +64,6 @@
         <div class="question" id="question5">
             <br><h2>Pergunta 5</h2>
             <p>Você tem notado mudanças no seu apetite ultimamente?</p><br>
-            <!-- Não = Positivo, Sim = Negativo -->
             <button onclick="answerQuestion(5, 10)">Sim</button>
             <button onclick="answerQuestion(5, 5)">Relativamente Sim</button>
             <button onclick="answerQuestion(5, -5)">Relativamente Não</button>
@@ -76,7 +73,6 @@
         <div class="question" id="question6">
             <br><h2>Pergunta 6</h2>
             <p>Existe alguma atividade que costumava te trazer prazer?</p><br>
-            <!-- Não = Positivo, Sim = Negativo -->
             <button onclick="answerQuestion(6, 10)">Sim</button>
             <button onclick="answerQuestion(6, 5)">Relativamente Sim</button>
             <button onclick="answerQuestion(6, -5)">Relativamente Não</button>
@@ -113,11 +109,10 @@
         <div class="question" id="question10">
             <br><h2>Pergunta 10</h2>
             <p>Você tem tido pensamentos negativos que têm persistido?</p><br>
-            <!-- Não = Positivo, Sim = Negativo -->
-            <button onclick="answerQuestion(10, 10)">Sim</button>
-            <button onclick="answerQuestion(10, 5)">Relativamente Sim</button>
-            <button onclick="answerQuestion(10, -5)">Relativamente Não</button>
-            <button onclick="answerQuestion(10, -10)">Não</button>
+            <button onclick="answerQuestion(10, -10)">Sim</button>
+            <button onclick="answerQuestion(10, -5)">Relativamente Sim</button>
+            <button onclick="answerQuestion(10, 5)">Relativamente Não</button>
+            <button onclick="answerQuestion(10, 10)">Não</button>
         </div>
     </div>
     </div>
@@ -141,7 +136,11 @@
         // Script para definir valores
 
         // Arrumar dados totais e talvez adicionar mais paginas
-        let score = 100;
+        // Para arrumar o dado total preciso: q1 (quantidade de perguntas) = 10
+        // preciso2: q2 (quantidade maxima/total de pontos)= 100
+        // Conta: q1/q2 = s
+        // 100/10 = 10
+        let score = 10;
 
         function answerQuestion(questionNumber, points) {
             score += points;
