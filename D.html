@@ -1,12 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styleD.css">
-    <title>Document</title>
+    <title>Loading Screen</title>
+    <link rel="stylesheet" href="styleA.css">
 </head>
 <body>
-    <img src="pics/muito ruim.png" alt="resultadoBom" class="imgg">
+    <div id="loading" class="newtons-cradle">
+        <div class="newtons-cradle__dot"></div>
+        <div class="newtons-cradle__dot"></div>
+        <div class="newtons-cradle__dot"></div>
+        <div class="newtons-cradle__dot"></div>
+    </div>
+    <div id="content" style="display: none;">
+        <!-- Conteúdo da sua página -->
+         <img src="pics/muito ruim.png" alt="">
+    </div>
+    <script src="script.js"></script>
 </body>
+<script>
+    window.addEventListener('load', function() {
+    setTimeout(function() {
+        document.getElementById('loading').style.display = 'none';
+        document.getElementById('content').style.display = 'block';
+    }, 7000);
+});
+
+</script>
 </html>
