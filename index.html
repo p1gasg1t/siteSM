@@ -3,168 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Questionário</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>  
-    <!-- HTML Do Menu Lateral -->  
+<body>
+    <div class="escrita">
+        <h1>Termos de consentimento</h1>
+        <p>Antes de iniciarmos nosso questionário, gostariamos de informar algumas coisas!</p>
+        <p>Primeiramente, nenhum destes dados serão públicos e de nenhuma forma serão expostos!</p>
+        <p>Também gostariamos de grifar que este site não passa de um projeto escolar para uma feira de ciências,<br>
+        seguindo este caminho, este site se passa apenas como uma pesquisa para tratarmos um nível de saúde mental do usuário <br>
+        de forma alguma iremos utilizar os dados obtidos para direcionar o usuário para um profissional qualificado, já que esta <br>
+        decisão cabe apenas, e exclusivamente, da ética do participante.</p>
+        <p>Em caso de direcionamento para um profissional, recomendamos fortemente que o mesmo procure ajuda em sua cidade <br>
+        para o encaminhamento adequado</p>
+        <p>Respostas inadequadas ou erradas ficam à resposabilidade do usuário, sendo assim <br>
+        qualquer resultado deve ser considarado apenas como uma forma de aconselhamento de nossa plataforma e sistema.</p>
+        <p>Ao concordar com os termos você estará consentindo com nossos termos e desta forma, nosso <br>
+        sistema não se resposabilizará por qualquer erro de digitação, mal uso, respostas erradas e encaminhamento inadequado.</p>
+        <p>Não toleramos qualquer reclamação à respeito do encaminhamento inadequado e perca de tempo do profissional, também <br>
+        não estaremos encarregados, em nenhuma forma, em arcar com os gastos com o profissional, como dito anteriormente nosso sistema <br>
+        apenas aconselhará o usuário a buscar ajuda em caso necessário.</p>
+        <p>Ao apertar no botão, você estará ciente de nossos termos. Agradecemos sua preferência e qualquer reclamação sobre o site <br>
+        deverá ser direcionada exclusivamente para nosso técnico.</p>   
 
-    <div id="sidebar" class="sidebar">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-        <a href="sobre.html">Sobre nós</a>
-    </div>
-
-    <div id="main">
-        <button class="openbtn" id="openbtn" onclick="openNav()">☰</button>
-    </div>
-
-    <!-- Final HTML Do Menu Lateral -->  
-
-
-
-    <!-- PERGUNTAS -->  
-    <div>
-    <div class="container">
-        <div class="question" id="question1" style="display: block;">
-            <br><h2>Pergunta 1</h2>
-            <p>Como você tem se sentido ultimamente?</p> <br> 
-            <button class="btn" onclick="answerQuestion(1, 10)">Bem</button>
-            <button class="btn" onclick="answerQuestion(1, 5)">Relativamente Bem</button>
-            <button class="btn" onclick="answerQuestion(1, -5)">Relativamente Mal</button>
-            <button class="btn" onclick="answerQuestion(1, -10)">Mal</button>
-        </div>
-
-        <div class="question" id="question2">
-            <br><h2>Pergunta 2</h2>
-            <p>Existe algo que esteja te incomodando ou te preocupando muito?</p><br>
-            <button onclick="answerQuestion(2, 10)">Sim</button>
-            <button onclick="answerQuestion(2, 5)">Relativamente Sim</button>
-            <button onclick="answerQuestion(2, -5)">Relativamente Não</button>
-            <button onclick="answerQuestion(2, -10)">Não</button>
-        </div>
-
-        <div class="question" id="question3">
-            <br><h2>Pergunta 3</h2>
-            <p>Você tem encontrado dificuldades para dormir ou descansar bem?</p><br>
-            <button onclick="answerQuestion(3, 10)">Sim</button>
-            <button onclick="answerQuestion(3, 5)">Relativamente Sim</button>
-            <button onclick="answerQuestion(3, -5)">Relativamente Não</button>
-            <button onclick="answerQuestion(3, -10)">Não</button>
-        </div>
-
-        <div class="question" id="question4">
-            <br><h2>Pergunta 4</h2>
-            <p>Como você está lidando com o estresse do dia a dia?</p><br>
-            <button onclick="answerQuestion(4, 10)">Bem</button>
-            <button onclick="answerQuestion(4, 5)">Relativamente Bem</button>
-            <button onclick="answerQuestion(4, -5)">Relativamente Mal</button>
-            <button onclick="answerQuestion(4, -10)">Mal</button>
-        </div>
-
-        <div class="question" id="question5">
-            <br><h2>Pergunta 5</h2>
-            <p>Você tem notado mudanças no seu apetite ultimamente?</p><br>
-            <button onclick="answerQuestion(5, 10)">Sim</button>
-            <button onclick="answerQuestion(5, 5)">Relativamente Sim</button>
-            <button onclick="answerQuestion(5, -5)">Relativamente Não</button>
-            <button onclick="answerQuestion(5, -10)">Não</button>
-        </div>
-
-        <div class="question" id="question6">
-            <br><h2>Pergunta 6</h2>
-            <p>Existe alguma atividade que costumava te trazer prazer?</p><br>
-            <button onclick="answerQuestion(6, 10)">Sim</button>
-            <button onclick="answerQuestion(6, 5)">Relativamente Sim</button>
-            <button onclick="answerQuestion(6, -5)">Relativamente Não</button>
-            <button onclick="answerQuestion(6, -10)">Não</button>
-        </div>
-
-        <div class="question" id="question7">
-            <br><h2>Pergunta 7</h2>
-            <p>Você se sente apoiado/a pelas pessoas ao seu redor?</p><br>
-            <button onclick="answerQuestion(7, 10)">Sim</button>
-            <button onclick="answerQuestion(7, 5)">Relativamente Sim</button>
-            <button onclick="answerQuestion(7, -5)">Relativamente Não</button>
-            <button onclick="answerQuestion(7, -10)">Não</button>
-        </div>
-
-        <div class="question" id="question8">
-            <br><h2>Pergunta 8</h2>
-            <p>Você já considerou buscar ajuda profissional para lidar com o que você tem?</p><br>
-            <button onclick="answerQuestion(8, 10)">Sim</button>
-            <button onclick="answerQuestion(8, 5)">Relativamente Sim</button>
-            <button onclick="answerQuestion(8, -5)">Relativamente Não</button>
-            <button onclick="answerQuestion(8, -10)">Não</button>
-        </div>
-
-        <div class="question" id="question9">
-            <br><h2>Pergunta 9</h2>
-            <p>Você consegue se concentrar nas suas atividades diárias sem dificuldade?</p><br>
-            <button onclick="answerQuestion(9, 10)">Sim</button>
-            <button onclick="answerQuestion(9, 5)">Relativamente Sim</button>
-            <button onclick="answerQuestion(9, -5)">Relativamente Não</button>
-            <button onclick="answerQuestion(9, -10)">Sim</button>
-        </div>
-
-        <div class="question" id="question10">
-            <br><h2>Pergunta 10</h2>
-            <p>Você tem tido pensamentos negativos que têm persistido?</p><br>
-            <button onclick="answerQuestion(10, -10)">Sim</button>
-            <button onclick="answerQuestion(10, -5)">Relativamente Sim</button>
-            <button onclick="answerQuestion(10, 5)">Relativamente Não</button>
-            <button onclick="answerQuestion(10, 10)">Não</button>
+        <div class="btns">
+                <button onclick="window.location.href='questionario.html'">Aceitar</button>
+            <a href="https://google.com">
+                <button>Rejeitar</button>
+            </a>
         </div>
     </div>
-    </div>
-    <!-- FINAL DAS PERGUNTAS -->  
-
-
-    <script>
-        // Script para abrir tela lateral
-        function openNav() {
-            document.getElementById("sidebar").style.width = "250px";
-            document.getElementById("main").style.marginLeft = "250px";
-        }
-
-        function closeNav() {
-            document.getElementById("sidebar").style.width = "0";
-            document.getElementById("main").style.marginLeft= "0";
-        }
-        
-        // Final script para abrir tela lateral
-        
-        // Script para definir valores
-
-        // Arrumar dados totais e talvez adicionar mais paginas
-        // Para arrumar o dado total preciso: q1 (quantidade de perguntas) = 10
-        // preciso2: q2 (quantidade maxima/total de pontos)= 100
-        // Conta: q1/q2 = s
-        // 100/10 = 10
-        let score = 10;
-
-        function answerQuestion(questionNumber, points) {
-            score += points;
-            document.getElementById('question' + questionNumber).style.display = 'none';
-
-            if (questionNumber < 10) {
-                document.getElementById('question' + (questionNumber + 1)).style.display = 'block';
-            } else {
-                displayResult();
-            }
-        }
-
-        function displayResult() {
-            if (score >= 75) {
-                window.location.href = 'A.html';
-            } else if (score >= 50) {
-                window.location.href = 'B.html';
-            } else if (score >= 25) {
-                window.location.href = 'C.html';
-            } else {
-                window.location.href = 'D.html';
-            }
-        }
-        // Final do script para definir valores
-    </script>
 </body>
 </html>
