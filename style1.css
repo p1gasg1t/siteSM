@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Caixa central  */
 body {
     font-family: Arial, sans-serif;
@@ -156,3 +157,163 @@ button:active {
 
 /* Final da barra lateral central */
 
+=======
+/* Caixa central  */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: url(pics/WhatsApp\ Image\ 2024-08-06\ at\ 23.16.35.jpeg) no-repeat;
+    background-size: cover;
+}
+
+
+.container {
+    background-color: transparent;
+    backdrop-filter: blur(15px);
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(50, 98, 115);
+    border-radius: 8px;
+    text-align: center;
+    width: 105vh;
+    height: 30vh;
+    padding: 10px;
+    overflow: hidden;
+    font-weight: 700;
+}
+
+.question {
+    display: none;
+}
+
+.question h2 {
+    margin-top: 0;
+}
+
+/* Botões */
+button {
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+  
+button:hover {
+    background-color: #23c483;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+}
+  
+button:active {
+    transform: translateY(-1px);
+}
+/* Final botões */
+
+/* Barra lateral central */
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0px;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#openbtn {
+        height: 50px;
+        position: absolute;
+        background-color: transparent;
+        top: 20px;
+        left: 10px;
+        cursor: pointer;
+        border: 2px solid #5C9EAD;
+        overflow: hidden;
+        border-radius: 30px;
+        color: #333;
+}
+#openbtn::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        transition: all 0.5s ease-in-out;
+        background-color: #5C9EAD;
+        border-radius: 30px;
+        visibility: hidden;
+        height: 10px;
+        width: 10px;
+        z-index: -1;
+      }
+
+#openbtn:hover {
+    box-shadow: 1px 1px 200px #252525;
+    color: #fff;
+    border: none;
+    translate: translateX(7);
+  }
+#openbtn:hover::after {
+    visibility: visible;
+    transform: scale(100) translateX(1px);
+  }
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-width:930px) {
+    .container { 
+        width: 40vh;
+        height: 57vh;
+        margin: 0 auto;
+    }
+    button { 
+        margin-bottom: 15px;
+        gap: 10px;
+    }
+    
+}
+
+/* Final da barra lateral central */
+
+>>>>>>> 16e9f1da9c20d4c6ed3599ab6bbfeb6ad9fdb515
