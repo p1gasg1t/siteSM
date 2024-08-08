@@ -148,7 +148,7 @@ header * {
 }
 
 .container {
-    z-index: 2;
+    z-index: -1;
     position: absolute;
     top: 100vh;
     background: black;
@@ -156,13 +156,4 @@ header * {
     font-weight: lighter;
     padding: 40px;
     color: grey;
-}
-
-@media screen and (max-width:930px) {
-    .container {
-        z-index: +2;
-    }
-    .header {
-        z-index: 2;
-    }
 }
