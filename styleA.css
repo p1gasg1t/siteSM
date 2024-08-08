@@ -145,11 +145,14 @@ header * {
 }
 
 .container {
-    position: absolute;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     top: 100vh;
     background: black;
-    line-height: 30px;
     font-weight: lighter;
     padding: 40px;
     color: grey;
+    font-size: 20px;
 }
