@@ -15,7 +15,15 @@
     </div>
     <div id="content" style="display: none;">
         <!-- Conteúdo da sua página -->
-         <img src="pics/mal.png" alt="">
+        <header>
+            <h1>Suas respostas estão prontas</h1>
+            <p>Role abaixo para ver</p>
+        </header> 
+        <div class="container">
+            <p>
+                Notamos que sua saúde mental não anda muito bem!
+            </p>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
@@ -24,7 +32,7 @@
     setTimeout(function() {
         document.getElementById('loading').style.display = 'none';
         document.getElementById('content').style.display = 'block';
-    }, 7000);
+    }, 500);
 });
 
 </script>
