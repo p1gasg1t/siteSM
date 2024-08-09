@@ -95,7 +95,6 @@ body {
 
 html{
     height: 100%;
-    overflow: hidden;
 }
 body{
     color: #fff;
@@ -146,6 +145,7 @@ header * {
 
 .container {
     position: relative;
+    display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -160,13 +160,10 @@ header * {
 
 @media screen and (max-width: 930px) {
     .container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        left: auto;
-        right: 0%;
+        width: 100%;
+        padding: 20px;
+        margin: 0 auto;
+        display: block;
     }
     .header {
         display: flex;
