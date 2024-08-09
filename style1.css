@@ -109,7 +109,7 @@ button:active {
         border: 2px solid #5C9EAD;
         overflow: hidden;
         border-radius: 30px;
-        color: #333;
+        color: #FFF;
 }
 #openbtn::after {
         content: "";
@@ -127,7 +127,7 @@ button:active {
 
 #openbtn:hover {
     box-shadow: 1px 1px 200px #252525;
-    color: #fff;
+    color: #333;
     border: none;
     translate: translateX(7);
   }
@@ -155,7 +155,6 @@ button:active {
         margin-bottom: 15px;
         gap: 10px;
     }
-    
 }
 
 /* Final da barra lateral central */
