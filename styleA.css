@@ -161,7 +161,17 @@ header * {
 @media screen and (max-width: 930px) {
     .container {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
+        text-align: center;
+        left: auto;
+        right: 0%;
+    }
+    .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: column;
     }
 }
