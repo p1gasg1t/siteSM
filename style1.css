@@ -7,7 +7,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background: url(pics/sun-god-depicted-as-powerful-man-renaissance-setting.jpg) no-repeat;
+    background: url(pics/sun-god-depicted-as-powerful-man-renaissance-setting\ \(1\).jpg) no-repeat;
     background-size: cover;
 }
 
@@ -146,6 +146,7 @@ button:active {
         width: 40vh;
         height: 57vh;
         margin: 0 auto;
+        color: #FFF;
     }
     button { 
         margin-bottom: 15px;
