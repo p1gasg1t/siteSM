@@ -126,7 +126,6 @@ header h1 {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 header, header:before{
@@ -140,10 +139,7 @@ header::before{
     right: 0;
     bottom: 0;
     display: block;
-    background: url(HERO.jpeg);
-    background-size: cover;
     transform-origin: center center 0;
-    transform: translateZ(-1px) scale(2);
     z-index: -1;
     min-height: 100vh;
 }
@@ -157,6 +153,7 @@ header::before{
     line-height: 30px;
     font-weight: lighter;
     padding: 40px;
+    display: flex;
     flex-direction: column;
     color: grey;
 }
