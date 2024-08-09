@@ -150,6 +150,7 @@ button:active {
     }
     .question {
         color: #FFF;
+        backdrop-filter: blur(15px);
     }
     button { 
         margin-bottom: 15px;
