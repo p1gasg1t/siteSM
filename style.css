@@ -60,8 +60,7 @@ button:active {
         padding: 0px;
         overflow-y: auto;
         overflow-x: hidden;
-        background-color: transparent;
-        backdrop-filter: blur(15px);
+        color: white;
     }
 }
 
