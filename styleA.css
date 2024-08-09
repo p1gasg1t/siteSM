@@ -157,3 +157,11 @@ header * {
     font-size: 20px;
     right: 100px;
 }
+
+@media screen and (max-width: 930px) {
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
