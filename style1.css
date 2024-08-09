@@ -148,6 +148,9 @@ button:active {
         margin: 0 auto;
         color: #FFF;
     }
+    .question {
+        color: #FFF;
+    }
     button { 
         margin-bottom: 15px;
         gap: 10px;
