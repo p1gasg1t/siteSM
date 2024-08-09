@@ -161,3 +161,8 @@ button:hover {
 button:active {
     transform: translateY(-1px);
 }
+
+.btn {
+    display: block;
+    margin: 20px auto;
+}
