@@ -6,7 +6,7 @@ body {
     align-items: center;
     text-align: center;
     height: 93vh;
-    background: url(pics/sun-god-depicted-as-powerful-man-renaissance-setting\ \(1\).jpg) no-repeat;
+    background: url(pics/sun-god-depicted-as-powerful-man-renaissance-setting.jpg) no-repeat;
     background-size: cover;
 }
 
@@ -60,7 +60,10 @@ button:active {
         padding: 0px;
         overflow-y: auto;
         overflow-x: hidden;
-        color: #FFF;
+        backdrop-filter: blur(10px);
+    }
+    .btns {
+        backdrop-filter: blur(15px);
     }
 }
 

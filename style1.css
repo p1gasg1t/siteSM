@@ -7,7 +7,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background: url(pics/sun-god-depicted-as-powerful-man-renaissance-setting\ \(1\).jpg) no-repeat;
+    background: url(pics/sun-god-depicted-as-powerful-man-renaissance-setting.jpg) no-repeat;
     background-size: cover;
 }
 
@@ -109,7 +109,7 @@ button:active {
         border: 2px solid #5C9EAD;
         overflow: hidden;
         border-radius: 30px;
-        color: #FFF;
+        color: #333;
 }
 #openbtn::after {
         content: "";
@@ -127,7 +127,7 @@ button:active {
 
 #openbtn:hover {
     box-shadow: 1px 1px 200px #252525;
-    color: #333;
+    color: #fff;
     border: none;
     translate: translateX(7);
   }
@@ -146,23 +146,12 @@ button:active {
         width: 40vh;
         height: 57vh;
         margin: 0 auto;
-        color: #FFF;
-    }
-    .question {
-        color: #FFF;
-        backdrop-filter: blur(15px);
     }
     button { 
         margin-bottom: 15px;
         gap: 10px;
     }
-
-    #openbtn {
-        color: #FFF;
-    }
-    #openbtn:hover {
-        color: #333;
-    }
+    
 }
 
 /* Final da barra lateral central */

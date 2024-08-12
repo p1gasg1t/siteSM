@@ -1,0 +1,11 @@
+.quest {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    top: 0px;
+}
+body {
+    background: url(pics/sun-god-depicted-as-powerful-man-renaissance-setting.jpg) no-repeat;
+    background-size: cover;
+}

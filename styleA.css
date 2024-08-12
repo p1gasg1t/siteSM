@@ -166,3 +166,7 @@ button:active {
     display: block;
     margin: 20px auto;
 }
+
+.links {
+    text-decoration: none;
+}
