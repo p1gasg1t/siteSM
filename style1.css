@@ -155,7 +155,7 @@ button:active {
 }
 
 @media screen and (max-width:1000px) {
-    .escrita { 
+    .container { 
         color: #FFF;
         backdrop-filter: blur(15px);
     }
@@ -165,7 +165,7 @@ button:active {
 }
 
 @media screen and (max-width:2000px) {
-    .escrita { 
+    .container { 
         color: #FFF;
         backdrop-filter: blur(15px);
     }
@@ -175,7 +175,7 @@ button:active {
 }
 
 @media screen and (max-width:3000px) {
-    .escrita { 
+    .container { 
         color: #FFF;
         backdrop-filter: blur(15px);
     }
