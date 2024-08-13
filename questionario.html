@@ -155,6 +155,9 @@
         }
 
         function displayResult() {
+
+            localStorage.setItem('score',score);
+
             if (score >= 75) {
                 window.location.href = 'A.html';
             } else if (score >= 50) {

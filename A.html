@@ -20,7 +20,7 @@
 
         </header>  
         <div class="container">
-            <h3>Que bom!</h3>
+            <h3>Que bom! </h3> <h3 id="scoreDisplay"></h3> 
             <p>Seus resultados parecem muito bons, mas gostariamos de falar algo para você! <br>
             Não se deixe enganar por estar tudo bem, muitas vezes paramos de cuidar de nós mesmos e é nessas ocasiões que o pior acontece!</p>
 
@@ -50,6 +50,12 @@
     <script src="script.js"></script>
 </body>
 <script>
+    const score = localStorage.getItem('score');
+
+    if (score !== null) {
+        document.getElementById('scoreDisplay').textContent = 'Você fez: ' + score + ' pontos'; 
+    }
+
     window.addEventListener('load', function() {
     setTimeout(function() {
         document.getElementById('loading').style.display = 'none';

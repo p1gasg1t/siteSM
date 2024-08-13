@@ -19,7 +19,7 @@
 
         </header>  
         <div class="container">
-            <h3>Você está bem?</h3>
+            <h3>Você está bem?</h3><h3 id="scoreDisplay"></h3> 
             <p>Notamos que você anda meio mal, você sabia que você não é o único se sentindo assim?</p>
 
             <p>Entendemos perfeitamente como as pessoas podem deixar de lado uma visita para o psicólogo por acharem desnecessário!</p>
@@ -48,6 +48,11 @@
     <script src="script.js"></script>
 </body>
 <script>
+        const score = localStorage.getItem('score');
+
+if (score !== null) {
+    document.getElementById('scoreDisplay').textContent = 'Você fez: ' + score + ' pontos'; 
+}
     window.addEventListener('load', function() {
     setTimeout(function() {
         document.getElementById('loading').style.display = 'none';

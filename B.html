@@ -19,7 +19,7 @@
 
         </header>  
         <div class="container">
-            <h3>Tudo parece bem!</h3>
+            <h3>Tudo parece bem!</h3><h3 id="scoreDisplay"></h3> 
             <p>Gostaríamos de informar que você parece estar bem! <br>
                 Mas isso não significa que você não precisa prestar atenção em pequenos detalhes.</p>
 
@@ -47,6 +47,11 @@
     <script src="script.js"></script>
 </body>
 <script>
+        const score = localStorage.getItem('score');
+
+if (score !== null) {
+    document.getElementById('scoreDisplay').textContent = 'Você fez: ' + score + ' pontos'; 
+}
     window.addEventListener('load', function() {
     setTimeout(function() {
         document.getElementById('loading').style.display = 'none';

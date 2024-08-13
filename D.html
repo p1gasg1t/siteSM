@@ -19,7 +19,7 @@
 
         </header>  
         <div class="container">
-            <h3>Vamos conversar?</h3>
+            <h3>Vamos conversar?</h3><h3 id="scoreDisplay"></h3> 
             <p>Sentimos muito mesmo te informar, mas seus resultados não parecem muito bons!</p>
             <p>Não conseguimos deixar de notar que seus resultados chamaram a atenção de nosso sistema de pontuação!</p>
 
@@ -50,6 +50,11 @@
     <script src="script.js"></script>
 </body>
 <script>
+        const score = localStorage.getItem('score');
+
+if (score !== null) {
+    document.getElementById('scoreDisplay').textContent = 'Você fez: ' + score + ' pontos'; 
+}
     window.addEventListener('load', function() {
     setTimeout(function() {
         document.getElementById('loading').style.display = 'none';
