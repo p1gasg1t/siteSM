@@ -154,4 +154,13 @@ button:active {
     
 }
 
+@media screen and (max-width:1000px){
+    .container {
+        color: #FFF;
+    }
+    .question {
+        color: #FFF;
+    }
+}
+
 /* Final da barra lateral central */
