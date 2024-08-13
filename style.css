@@ -61,6 +61,7 @@ button:active {
         overflow-y: auto;
         overflow-x: hidden;
         backdrop-filter: blur(10px);
+        color: #FFF;
     }
     .btns {
         backdrop-filter: blur(15px);
@@ -71,5 +72,6 @@ button:active {
     .escrita { 
         overflow-y: auto;
         overflow-x: hidden;
+        color: #FFF;
     }
 }
