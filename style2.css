@@ -46,18 +46,6 @@
   }
     /* Botão fim */
 
-.topEscrita {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin: 0 auto;
-    width: 50%;
-    font-weight: 800;
-    letter-spacing: 2px;
-    font-family: sans-serif;
-}
-
 body {
     height: 100vh;
     margin: 0;
@@ -65,10 +53,20 @@ body {
     align-items: center;
     justify-content: center;
     background: url(pics/sun-god-depicted-as-powerful-man-renaissance-setting.jpg) no-repeat;
+    background-size: cover;
   }
 
 .escrita {
     font-size: 20px;
     font-weight: 500;
-    flex-direction: column;
+    background-color: transparent;
+    backdrop-filter: blur(15px);
+    border-radius: 15px;
+    width: 800px;
+    height: auto;
+    padding: 20px;
+    color: #FFF;
+    margin: 0;
+    max-width: 80%;
+    text-decoration: none;
 }
