@@ -70,7 +70,7 @@ button:active {
 }
 
 @media screen and (max-width:1000px) {
-    .escrita { 
+    #escrita { 
         overflow-y: auto;
         overflow-x: hidden;
         color: #FFF;
@@ -79,7 +79,7 @@ button:active {
 }
 
 @media screen and (max-width:2000px) {
-    .escrita { 
+    #escrita { 
         overflow-y: auto;
         overflow-x: hidden;
         color: #FFF;
@@ -88,7 +88,7 @@ button:active {
 }
 
 @media screen and (max-width:3000px) {
-    .escrita { 
+    #escrita { 
         overflow-y: auto;
         overflow-x: hidden;
         color: #FFF;
