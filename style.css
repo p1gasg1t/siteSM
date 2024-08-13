@@ -76,3 +76,19 @@ button:active {
         color: #FFF;
     }
 }
+
+@media screen and (max-width:2000px) {
+    .escrita { 
+        overflow-y: auto;
+        overflow-x: hidden;
+        color: #FFF;
+    }
+}
+
+@media screen and (max-width:3000px) {
+    .escrita { 
+        overflow-y: auto;
+        overflow-x: hidden;
+        color: #FFF;
+    }
+}
