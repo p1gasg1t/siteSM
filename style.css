@@ -74,6 +74,7 @@ button:active {
         overflow-y: auto;
         overflow-x: hidden;
         color: #FFF;
+        backdrop-filter: blur(15px);
     }
 }
 
@@ -82,6 +83,7 @@ button:active {
         overflow-y: auto;
         overflow-x: hidden;
         color: #FFF;
+        backdrop-filter: blur(15px);
     }
 }
 
@@ -90,5 +92,6 @@ button:active {
         overflow-y: auto;
         overflow-x: hidden;
         color: #FFF;
+        backdrop-filter: blur(15px);
     }
 }
